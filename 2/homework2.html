@@ -1,21 +1,95 @@
 <!DOCTYPE html>
 <html lang="ua">
+
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
    <title>Document</title>
 </head>
-<body>   
+
+<body>
    <script>
-      // let i = 0;
-      // while(i <= 10) {
-      //    document.write(i);
-      //    i++;
-      // }
-      for(let i = 10; i > 1; --i) {
-         document.write(i);
+      // Triangle
+      for (let j = 1; j < 5; j++) {
+         const asteriks = 2 * j - 1;
+         const spaces = (9 - asteriks) / 2;
+         for (let i = 0; i < spaces; i++) {
+            document.write('&nbsp;');
+            document.write('&nbsp;');
+         }
+         for (let i = 0; i < asteriks; i++) {
+            document.write('*');
+         }
+         for (let i = 0; i < spaces; i++) {
+            document.write('&nbsp;');
+            document.write('&nbsp;');
+         }
+         document.write('<br>');
       }
+
+      document.write('<br>');
+      document.write('<br>');
+
+      // Diamand
+      for (let j = 1; j < 5; j++) {
+         const asteriks = 2 * j - 1;
+         const spaces = (9 - asteriks) / 2;        
+         for (let i = 0; i < spaces; i++) {
+            document.write('&nbsp;');
+            document.write('&nbsp;');
+         }
+         for (let i = 0; i < asteriks; i++) {
+            document.write('*');
+         }
+         for (let i = 0; i < spaces; i++) {
+            document.write('&nbsp;');
+            document.write('&nbsp;');
+         }
+         document.write('<br>');
+      }
+      
+      for (let j = 3; j > 0; j--) {
+         const asteriks = 2 * j - 1;
+         const spaces = (9 - asteriks) / 2;
+         for (let i = 0; i < spaces; i++) {
+            document.write('&nbsp;');
+            document.write('&nbsp;');
+         }
+         for (let i = 0; i < asteriks; i++) {
+            document.write('*');
+         }
+         for (let i = 0; i < spaces; i++) {
+            document.write('&nbsp;');
+            document.write('&nbsp;');
+         }
+         document.write('<br>');
+      }
+
+      document.write('<br>');
+      document.write('<br>');
+
+      // Rectangle
+      for (let j = 0; j < 5; j++) {
+         if (j === 0 || j === 4) {
+            for (let i = 0; i < 9; i++) {
+               document.write('*');
+            }
+         } else {
+            for (let i = 0; i < 9; i++) {
+               if (i === 0 || i === 8) {
+                  document.write('*');
+               } else {
+                  document.write('&nbsp;');
+                  document.write('&nbsp;');
+               }
+
+            }
+         }
+         document.write('<br>');
+      }
+
    </script>
 </body>
+
 </html>
